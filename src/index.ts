@@ -1,9 +1,9 @@
 import { readFileSync } from 'fs';
-import { findElfWithMostCalories, findTopThreeElfsWithMostCaloriesTotal } from './day1/problem';
+import { getTotalScoreForStrategyCorrected } from './day2/problem';
 
-const day: number = 1;
-const inputFile = 'calories';
+const day: number = 2;
+const inputFile = 'strategy';
 
 const input = readFileSync(`./inputs/day${day}/${inputFile}.txt`, 'utf8');
 
-console.log(findTopThreeElfsWithMostCaloriesTotal(input));
+console.log(getTotalScoreForStrategyCorrected(input));
