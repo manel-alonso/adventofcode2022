@@ -1,9 +1,9 @@
 import { readFileSync } from 'fs';
-import { getTotalScoreForStrategyCorrected } from './day2/problem';
+import { findBadgePrioritiesInRutsacks, findPrioritiesInRutsacks } from './day3/problem';
 
-const day: number = 2;
-const inputFile = 'strategy';
+const day: number = 3;
+const inputFile = 'rutsacks';
 
 const input = readFileSync(`./inputs/day${day}/${inputFile}.txt`, 'utf8');
 
-console.log(getTotalScoreForStrategyCorrected(input));
+console.log(findBadgePrioritiesInRutsacks(input));
